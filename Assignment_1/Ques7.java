@@ -69,6 +69,7 @@ public class Ques7 {
                 cst++;
                 num++;
             }
+            //s
 
             int h = 1;
             while (h <= cst - 2) {
