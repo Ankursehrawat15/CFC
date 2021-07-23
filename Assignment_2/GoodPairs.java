@@ -4,6 +4,18 @@ import java.util.HashMap;
 
 public class GoodPairs {
 
+    public int numIdenticalPairs2(int[] nums) {
+
+        int[] count = new int[101];
+        int ans = 0;
+
+        for (int elem : nums) {
+            ans += count[elem]++;
+        }
+
+        return ans;
+    }
+
     public int numIdenticalPairs(int[] nums) {
         HashMap<Integer, Integer> map = new HashMap<>();
         int pair = 0;
